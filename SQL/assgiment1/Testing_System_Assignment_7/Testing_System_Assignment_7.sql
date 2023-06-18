@@ -2,13 +2,17 @@ use assignment;
 
 -- Question 1: Tạo trigger không cho phép người dùng nhập vào Group có ngày tạo
 -- trước 1 năm trước
-
+ 
+drop trigger if exists Question_1
 	delimiter $$
 	create trigger Question_1
-	before insert on `accounts`
+	before insert on groups_accounts
 	for each row
 	begin
-	if new.created_date < now() - interval 1 year
+
+	if new.group_id in (select group_id
+						from `groups`
+                        where created_date < now() - interval 1 year)
 	then 
 	signal sqlstate '12345' 
 	set message_text = 'can not';
@@ -101,7 +105,7 @@ use assignment;
 	begin
     declare total_question_1_exam tinyint;
     
-    select count(account_id) 
+    select count(question_id) 
     into total_question_1_exam
     from exams_questions
     where exam_id = new.exam_id;
