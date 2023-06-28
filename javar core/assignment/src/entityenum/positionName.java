@@ -1,6 +1,7 @@
-package entity;
+package entityenum;
 
 public enum positionName {
 	DEV, TEST, SCRUM_MASTER, PM
+	
 
 }
