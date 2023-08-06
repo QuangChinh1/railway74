@@ -1,0 +1,17 @@
+p.tomato {
+    border-style: double;
+    border-width: thin;
+    border-color: tomato;
+
+}
+
+p.blue {
+    border-style: double;
+    border-width: thin;
+    border-color: blue;
+
+}
+
+table, th, td {
+    border:1px solid black;
+  }
