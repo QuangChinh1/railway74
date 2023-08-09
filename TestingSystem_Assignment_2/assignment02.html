@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment02</title>
+    <link rel="stylesheet" href="./lession2.css">
+</head>
+<body>
+    <!-- Exercise 01/Question 01 -->
+    <div class="box_4 ex1">this element has a padding of 70px.</div>
+    <!-- Exercise 01/Question 02 -->
+    <div class="padding_70px ex1 margin_75px">this element has a padding of 70px.</div>
+    <b class="ex1 padding-vertical-70 margin_75px"> I am vertically centered.</b>
+    <div class=" ex1 margin_75px">abc</div>
+    <div class="padding_10px ex1">abc</div>
+    <!-- Exercise 02/Question 01 -->
+    <h2 style="text-align: center;">Bài 01:Sử dụng các tag cơ bản</h2>
+    <p><big><b><u>Yêu cầu</u></b></big></p>
+    <div><b>Thiết kế trang web có nội dung như sau:</b></div>
+    <p style="text-align: center;">
+        Lập trình Web
+        <br>
+        Chào mừng các bạn đến với ngôn ngữ HTML
+    </p>
+    <br><br><br>
+    <div class="container">
+        <h2 style="text-align: center; color: rgb(41, 196, 59);  ">Bài 02:Sử dụng các tag cơ bản (tt)</h2>
+        <p><big><b><u>Yêu cầu</u></b></big></p>
+        <div><b>Thiết kế trang web có nội dung như sau:</b></div>
+        <div style="text-align: center;">
+            <div style="background-color: rgb(239, 135, 153); color: red; text-align: center;">MẸ</div>
+            <div style="background-color: yellow;">
+                <div style="display: inline-block; line-height: 0.5;">
+                    <div style="color: blue; display: inherit;">
+                        <p>Mẹ là cả 1 trời thương</p>
+                        <p>Mẹ là 1 thiên đường trần gian</p>
+                        <p>Công ơn cha mẹ tựa biển trời</p>
+
+                    </div>
+                    <hr>
+                    <div style="color: red; display: inherit;">
+                        <p>Làm sao báo hiếu hỡi người ơi?</p>
+                        <p>Nếu chưa báo hiếu đừng bất hiếu</p>
+                        <p>Bất hiếu làm ta khổ muôn đời</p>
+                    </div>
+                    <hr>
+                    <div style="color: green; display: inherit;">
+                        <p>Một đời vốn liếng mẹ trao</p>
+                        <p>Mẹ cho tất cả mẹ nào giữ riêng</p>
+                        <p>Mẹ hiền như 1 bà tiên</p>
+                        <p>Mẹ theo con suốt hành trình con đi</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center;color: green;">Định dạng văn bản</h2>
+        <p>
+            <b><u>Hóa học:</u></b>
+            <i>Nước:</i>
+            <span style="color: red;">H<sub>2</sub>O;</span>
+            <i>Axit Sunfuric:</i>
+            <span style="color: red;">H<sub>2</sub>SO<sub>4</sub></span>
+        </p>
+        <p>
+            <b><u>Toán học:</u></b>
+            <i>Phương trình bậc 2:</i>
+            <span style="color: red;">
+                ax<sup>2</sup>+bx+c=0
+            </span>
+        </p>
+        <p>
+            <b><u>Tin học:</u></b>
+            <i>Vòng lặp For:</i>
+            <pre style="background-color: lightgray;">
+                    
+                For i = 0 To 10
+
+                                Tong = Tong + 1
+
+                Next
+            </pre>    
+        </p>
+
+        <h2 style="text-align: center; color: rgb(232, 23, 58);"> Công ty Hoa tươi Nhân Ái</h2>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="./a.jpg">
+            <div style="width: 500px;">
+                <ol>
+                    <li ><span style="background-color: pink;">Giới thiệu:</span>
+                        <ul>
+                            <li>Thành lập ngày 25/05/2007</li>
+                            <li>Chuyên cung cấp các loại hoa tươi</li>
+                            <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                            <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                        </ul>
+                        <hr>
+                    </li>
+                    <li><span style="background-color: pink;">Liên hệ</span>
+                        <ul>
+                            <li>Điện thoại: 0987654321</li>
+                            <li>Địa chỉ: 227 Nguyễn Văn Cừ</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p><span style="color: blueviolet;">&copy; Copyright:</span>
+                    <b><a href="#">Trung tâm Tin Học - Đại học Khoa học Tự Nhiên TP. HCM</a></b>
+                </p>
+
+            </div>
+        </div>   
+    </div>
+    <style>
+        #food-table {
+            width: 450px;
+            background-color: white;
+            border: 2px solid #9b5027;
+            border-collapse: collapse;
+        }
+
+        /* even, odd */
+        #food-table tr:nth-child(odd) {
+            background-color: #edbba0;
+        }
+
+        #food-table th, td {
+            padding: 8px 16px;
+        }
+
+        #food-table th {
+            color: white;
+            background-color: #9b5027;
+            border: 2px solid brown;
+        }
+
+        #food-table td {
+            border: 2px solid #9b5027;
+        }
+    </style>
+    <div style="background-color: #edbba0; padding: 16px 0;">
+        <h1 style="color: #9b5027; text-align: center;">Các món ngon Hà Nội</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img width="25%" src="./b.jpg">
+            <span><table width="68%" id="food-table" style="margin-left: 2%;"></span>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Món Ăn</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chả cá Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cháo cốc</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bánh gai Ninh Giang</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Bún Thang Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Canh Lắng</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Vịt quay Lạng Sơn</td>
+                </tr>
+            </table>
+        </div>    
+    </div>
+    <br>
+    <style>
+        #course-table {
+            border: 2px solid pink;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        #course-table th {
+            border: 2px solid pink;
+            color: white;
+            background-color: red;
+            padding: 8px 16px;
+        }
+
+        #course-table td {
+            border: 2px solid pink;
+        }
+
+        #course-table td[rowspan] {
+            text-align: center;
+        }
+    </style>
+    <h2 style="color: red; text-align: center;">Chương trình học - ngành học lập trình</h2>
+    <br>
+    <table id="course-table">
+        <tr>
+            <th rowspan="2">Nhóm học phần</th>
+            <th rowspan="2">Môn học</th>
+            <th colspan="2">Số tiết</th>
+        </tr>
+        <tr>
+            <th>Lý thuyết</th>
+            <th>Thực hành</th>
+        </tr>
+        <tr>
+            <td style="color: red;" rowspan="6">I <br>Tin học văn phòng</td>
+            <td>Hệ điều hành windows</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Sử dụng internet</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Soạn thảo văn bản với MS Word</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Tạo bài trình diễn với MS Power Point</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Xử lí số liệu với MS Excel</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Tạo trang web vs MS Fontpage</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td style="color: red;" rowspan="2">II <br>Kĩ thuật lập trình(VB,NET)</td>
+            <td>Nhập môn lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Kĩ thuật lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td colspan="4">....</td>
+        </tr>
+    </table>
+    <br>
+    <style>
+        #sale-table {
+            width: 80%;
+            color: darkgreen;
+            background-color: lightgreen;
+            border: 2px solid #505050;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        #sale-table td {
+            border: 2px solid #505050;
+        }
+
+        #sale-table td:first-child {
+            width: 40%;
+        }
+    </style>
+    <h2 style="color: green; text-align: center;">Phiếu đăng ký tham gia chương trình khuyến mại</h2>
+    <table id="sale-table">
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" placeholder="Nhập họ tên"></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text" placeholder="Nhập địa chỉ"></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="number" placeholder="Nhập số điện thoại"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" name="Giới tính" value="Nam">Nam
+                <input type="radio" name="Giới tính" value="Nữ" checked>Nữ </td>
+            </td>    
+        </tr>
+        <tr>
+            <td>Nghề nghiệp</td>
+            <td>
+                <select name="Object">
+                    <option value="Giáo Viên">Giáo viên</option>
+                    <option value="Công nhân">Công nhân</option>
+                    <option value="Học sinh">Học sinh</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn sản phẩm tham gia</td>
+            <td>
+                <select name="product" size="4" multiple>
+                    <option value="1" selected>Kem đánh răng</option>
+                    <option value="2">Bột giặt</option>
+                    <option value="3" selected>Dầu gội đầu</option>
+                    <option value="4">Sữa tắm</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số người dự đoán tham gia</td>
+            <td><input type="number" placeholder="250000"></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2" >
+                <input type="button" value="Đồng ý">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+</html>
